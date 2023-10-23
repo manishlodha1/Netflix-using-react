@@ -1,0 +1,132 @@
+.banner{
+    height: 600px;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+.banner::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: black;
+    opacity: 0.4;
+}
+
+.banner h1,p{
+    font-size: 3rem;
+    color: white;
+    z-index: 10;
+}
+
+.banner p{
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-weight: 100;
+}
+
+.banner div{
+    display: flex;
+}
+
+.banner div button{
+    padding: 1rem;
+    width: 150px;
+    outline: none;
+    border: none;
+    z-index: 10;
+    border-radius: 5px;
+    margin: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+
+}
+
+.banner div button:hover{
+    opacity: 0.6;
+}
+
+.banner div button:nth-child(odd){
+    background-color: white;
+    color: black;
+}
+
+.banner div button:nth-child(even){
+    background-color: rgb(57,57,57);
+    color: rgb(255,255,255);
+}
+
+.banner div button svg{
+    font-size: 1.7rem;
+    margin: 0 10px;
+}
+
+
+.genreBox{
+    height: 100px;
+    display: flex;
+    overflow-x: auto;
+    background-color: black;
+    flex: 0%;
+}
+
+.genreBox a{
+    color: black;
+    background-color: white;
+    padding: 1rem 0;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.5s;
+    min-width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.genreBox a:hover{
+    background-color: rgb(236,236,236);
+}
+
+
+.row{
+    background-color: black;
+    padding: 1rem;
+}
+
+.row h2{
+    margin: 0.3rem;
+    font-weight: 400;
+}
+
+.row div{
+    display: flex;
+    /* justify-content: center; */
+    overflow-x: auto;
+}
+
+.card{
+    width: 200px;
+    margin: 0.3rem;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
